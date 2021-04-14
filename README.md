@@ -7,4 +7,4 @@
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
 <a href="#" alt="Version">
-    <img src="https://img.shields.io/badge/VERSION-v0.1.1-blue" /></a>
+    <img src="https://img.shields.io/badge/VERSION-v0.1.1-blue?style=for-the-badge&logo=appveyor" /></a>
