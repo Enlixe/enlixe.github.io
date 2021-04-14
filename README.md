@@ -6,6 +6,5 @@
 *** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
-<a href="/" alt="Version">
+<a href="#" alt="Version">
     <img src="https://img.shields.io/badge/VERSION-v0.1.1-blue" /></a>
-[![Version][https://img.shields.io/badge/VERSION-v0.1.1-blue]][/]
