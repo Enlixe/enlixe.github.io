@@ -1,6 +1,6 @@
 <!-- PROJECT SHIELDS -->
 <a href="#" alt="Version">
-    <img src="https://img.shields.io/badge/VERSION-v0.1.1-blue?style=for-the-badge&logo=version" /></a>
+    <img src="https://img.shields.io/badge/VERSION-v0.1.2-blue?style=for-the-badge&logo=version" /></a>
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
@@ -11,6 +11,7 @@ This is a my main github web
 
 * [HTML]()
 * [CSS]()
+* [BOOTSTRAP]()
 
 <!-- ROADMAP -->
 ## Bugs and Issues
@@ -37,5 +38,6 @@ Distributed under the MIT License. See `LICENSE` for more information.
 ## Contact
 
 Twitter - [@EnlixeID](https://twitter.com/EnlixeId)
+Instagram - [@Star_bubbless](https://instagram.com/star_bubbless)
 
 Project Link: [https://github.com/enlixe/enlixe.github.io](https://github.com/enlixe/enlixe.github.io)
