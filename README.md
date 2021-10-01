@@ -1,9 +1,6 @@
 <!-- PROJECT SHIELDS -->
-### Badges
-
-[![version](https://img.shields.io/badge/VERSION-v1.1.2-blue?style=for-the-badge&logo=version)](#)
-
-[![github pages](https://github.com/Enlixe/enlixe.github.io/actions/workflows/gh-pages.yml/badge.svg)](https://github.com/Enlixe/enlixe.github.io/actions/workflows/gh-pages.yml)
+<a href="#" alt="Version">
+    <img src="https://img.shields.io/badge/VERSION-v0.1.2-blue?style=for-the-badge&logo=version" /></a>
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
@@ -12,7 +9,9 @@ This is a my main github web
 
 ### Built With
 
-* [HUGO](gohugo.io)
+* [HTML]()
+* [CSS]()
+* [BOOTSTRAP]()
 
 <!-- ROADMAP -->
 ## Bugs and Issues
