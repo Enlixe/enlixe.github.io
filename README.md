@@ -1,6 +1,13 @@
 <!-- PROJECT SHIELDS -->
 <a href="#" alt="Version">
-    <img src="https://img.shields.io/badge/VERSION-v0.1.2-blue?style=for-the-badge&logo=version" /></a>
+    <img src="https://img.shields.io/badge/VERSION-v0.2.0-blue?style=for-the-badge&logo=version" /></a>
+
+<!-- CHANGELOG -->
+## Changelog
+
+### v0.2.0
+
+Added Url Shortener :D
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
@@ -9,9 +16,9 @@ This is a my main github web
 
 ### Built With
 
-* [HTML]()
-* [CSS]()
-* [BOOTSTRAP]()
+* [HTML](/)
+* [CSS](/)
+* [BOOTSTRAP](/)
 
 <!-- ROADMAP -->
 ## Bugs and Issues
