@@ -1,0 +1,114 @@
+baseURL: "https://enlixe.github.io/"
+title: Enlixe Web
+paginate: 5
+theme: PaperMod
+
+disqusShortname: Enlixe
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+googleAnalytics: UA-123-45
+
+minify:
+    disableXML: true
+    minifyOutput: true
+
+params:
+    env: production # to enable google analytics, opengraph, twitter-cards and schema.
+    title: Enlixe Web
+    description: "Welcome To Enlixe Web"
+    author: ["Me", "Enlix"]
+    # author: ["Me", "You"] # multiple authors
+
+    images: [""]
+
+    ShowReadingTime: true
+    ShowShareButtons: true
+    comments: false
+    defaultTheme: auto
+    disableThemeToggle: false
+    disableSpecial1stPost: false
+
+    assets:
+        # disableHLJS: true # to disable highlightjs
+        # disableFingerprinting: true
+        favicon: ""
+        favicon16x16: ""
+        favicon32x32: ""
+        apple_touch_icon: ""
+        safari_pinned_tab: ""
+
+    label:
+        text: "Home"
+        icon: #/apple-touch-icon.png
+        iconHeight: 35
+        
+    # profile-mode
+    profileMode:
+        enabled: false # needs to be explicitly set
+        title: ExampleSite
+        imageUrl: ""
+        imageWidth: 120
+        imageHeight: 120
+        imageTitle: my image
+        buttons:
+            - name: Posts
+              url: posts
+            - name: Tags
+              url: tags
+
+    # home-info mode
+    homeInfoParams:
+        Title: "Hi there \U0001F44B"
+        Content: Welcome to my blog
+
+    socialIcons:
+        - name: twitter
+          url: "https://twitter.com/EnlixeId"
+        - name: discord
+          url: "https://discord.gg/GCyF49m"
+        - name: github
+          url: "https://github.com/Enlixe"
+        - name: instagram
+          url: "https://instagram.com/star_bubbless"
+
+    analytics:
+        google:
+            SiteVerificationTag: "XYZabc"
+
+    cover:
+        hidden: true # hide everywhere but not in structured data
+        hiddenInList: true # hide on list pages and home
+        hiddenInSingle: true # hide on single page
+
+    # for search
+    # https://fusejs.io/api/options.html
+    fuseOpts:
+        isCaseSensitive: false
+        shouldSort: true
+        location: 0
+        distance: 1000
+        threshold: 0.4
+        minMatchCharLength: 0
+        keys: ["title", "permalink", "summary", "content"]
+menu:
+    main:
+        #- identifier: categories
+        #  name: categories
+        #  url: /categories/
+        #  weight: 10
+        - identifier: tags
+          name: Tags
+          url: /tags/
+          weight: 20
+        - identifier: posts
+          name: Posts
+          url: /post/
+          weight: 30
+        - identifier: patch
+          name: Patch
+          url: /post/patchs/
+          weight: 40
