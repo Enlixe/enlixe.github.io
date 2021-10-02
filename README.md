@@ -25,6 +25,11 @@ This is a my main github web
 
 See the [open issues](https://github.com/enlixe/enlixe.github.io/issues) for a list of proposed features (and known issues).
 
+### Known Bugs
+
+* Redirect pages doesnt work properly
+* Button color in test page
+
 <!-- CONTRIBUTING -->
 ## Contributing
 
