@@ -1,9 +1,13 @@
 <!-- PROJECT SHIELDS -->
 <a href="#" alt="Version">
-    <img src="https://img.shields.io/badge/VERSION-v0.2.0-blue?style=for-the-badge&logo=version" /></a>
+    <img src="https://img.shields.io/badge/VERSION-v0.2.1-blue?style=for-the-badge&logo=version" /></a>
 
 <!-- CHANGELOG -->
 ## Changelog
+
+### v0.2.1
+
+Added Button
 
 ### v0.2.0
 
