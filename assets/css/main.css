@@ -16,13 +16,9 @@ div .content {
 
 .download {
     padding-left: 2rem;
-    color: whitesmoke
+    color: whitesmoke !important;
 }
 
-.download h4 {
-    padding-left: 1rem;
-}
-
-.download li {
+.downloadText {
     padding-left: 2rem;
 }
