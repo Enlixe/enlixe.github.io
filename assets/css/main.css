@@ -14,9 +14,15 @@ div .content {
     color: whitesmoke;
 }
 
-#black {
-    color: rgb(70, 70, 70);
+.download {
+    padding-left: 2rem;
+    color: whitesmoke
 }
-#white {
-    color: whitesmoke;
+
+.download h4 {
+    padding-left: 1rem;
+}
+
+.download li {
+    padding-left: 2rem;
 }
