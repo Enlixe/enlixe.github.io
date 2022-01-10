@@ -1,0 +1,171 @@
+body {
+  background-color: #777;
+  color: #fff;
+  --shadow_col: #1f1f1f;
+}
+table {
+  width: 100%;
+}
+tbody > tr:nth-child(odd) {
+  background-color: #858585;
+}
+tbody > tr:nth-child(even) {
+  background-color: #767676;
+}
+
+tbody > tr > td {
+  text-align: center;
+}
+.eventActive {
+  text-shadow: 0.5px 0.5px var(--shadow_col), 0.5px -0.5px var(--shadow_col),
+    -0.5px -0.5px var(--shadow_col), -0.5px -0.5px var(--shadow_col);
+}
+tbody > tr > td:nth-child(1) {
+  text-align: left;
+  text-indent: 10px;
+  background-color: rgba(0, 0, 0, 0.1);
+  font-size: 1.2em;
+}
+
+.header {
+  background-color: #333;
+  padding: 20px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+tbody input {
+  padding: 10px;
+  font-size: 20px;
+  width: 100%;
+}
+
+.times::before {
+  content: attr(time);
+}
+.num::before {
+  content: attr(num);
+}
+
+#snackbar {
+  visibility: hidden;
+  min-width: 250px;
+  margin-left: -125px;
+  background-color: #f33;
+  color: #fff;
+  text-align: center;
+  border-radius: 2px;
+  padding: 16px;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  bottom: 30px;
+  font-size: 17px;
+}
+.eventButton {
+  position: absolute;
+  right: 28px;
+  background-color: #77f;
+  padding: 2px;
+  cursor: pointer;
+  z-index: 99;
+}
+#events {
+  visibility: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 100px;
+  left: 0px;
+  background-color: #555;
+  -webkit-animation: fadeout 0.5s 1;
+  animation: fadeout 0.5s 1;
+}
+
+#sbYear {
+  text-align: center;
+  font-size: 1.2em;
+  color: #aaff00;
+}
+
+#events.show {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s 1;
+  animation: fadein 0.5s 1;
+}
+
+.eventSoon {
+  background-color: #00aaff !important;
+}
+
+.eventActive {
+  background-color: #00d600 !important;
+}
+.eventActive > td {
+  border: 1px #00d600 solid;
+}
+.eventActive > td:nth-child(2) {
+  text-decoration: line-through 2px red;
+  color: red;
+}
+.legend-cont {
+  margin: 0px 5px 0px 5px;
+  border: 2px white solid;
+  padding: 2px 2px 2px 2px;
+}
+.legend {
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+}
+#snackbar.show {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+  to {
+    bottom: 30px;
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+  to {
+    bottom: 30px;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeout {
+  from {
+    bottom: 30px;
+    opacity: 1;
+  }
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}
+
+@keyframes fadeout {
+  from {
+    bottom: 30px;
+    opacity: 1;
+  }
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}

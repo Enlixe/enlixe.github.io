@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>EnlX > Skyblock Calendar</title>
+    <script src="js/sbevents.js"></script>
+    <link rel="stylesheet" href="../../../assets/css/main.css" />
+    <link rel="stylesheet" href="css/calc.css" />
+  </head>
+  <body onload="showNextEvents()">
+    <div class="header">
+      <div>EnlX | Skyblock Calendar</div>
+    </div>
+    <div id="events">
+      <br />
+      <div id="sbYear"></div>
+      <br />
+      <div style="text-align: center">
+        <div>
+          <span class="legend-cont">
+            <span class="legend" style="background-color: #00aaff"></span>
+            <span>Soon</span>
+          </span>
+          <span class="legend-cont">
+            <span class="legend" style="background-color: #aaff00"></span>
+            <span>Active</span>
+          </span>
+          <br /><br />
+          <input
+            id="fishFestCheck"
+            type="checkbox"
+            onclick="FISHING_FESTIVAL = this.checked; showNextEvents(true);"
+          />
+          <span>Fishing Festival</span>
+        </div>
+      </div>
+      <br />
+      <table>
+        <thead>
+          <tr>
+            <th>Event Name</th>
+            <th>Start</th>
+            <th>End</th>
+            <th>Time left</th>
+            <th>Season</th>
+            <th>Skyblock Date</th>
+          </tr>
+        </thead>
+        <tbody id="tbEvents"></tbody>
+      </table>
+    </div>
+  </body>
+</html>
