@@ -235,30 +235,28 @@ function showNextEvents(update) {
     if (eventName == "Special Mayor Election") {
       eventTitle.style.backgroundColor = "#FF55FF";
     } else if (eventName == "Jerry's Workshop") {
-      // Make the background White
       eventTitle.style.backgroundColor = "#FFFFFF";
-      // Make the text Black
       eventTitle.style.color = "#000000";
-    } else if (eventName == "Season Of Jerry") {
-      // eventTitle.style.backgroundColor = "#FF55FF";
     } else if (eventName == "Dark Auction") {
       eventTitle.style.backgroundColor = "#000000";
       eventTitle.style.color = "#FFFFFF";
     } else if (eventName == "Jacob's Farming Contest") {
-      // gold
       eventTitle.style.backgroundColor = "#FFD700";
+      eventTitle.style.color = "#808080";
     } else if (eventName == "Fishing Festival") {
-      // light blue
-      eventTitle.style.backgroundColor = "#ADD8E6";
-      // Make the text Black
-      eventTitle.style.color = "#000000";
+      eventTitle.style.backgroundColor = "#00affa";
+      eventTitle.style.color = "#FFFFFF";
     }
-    ctd(v.start.toLocaleString(), row);
+    var timeStart = ctd(v.start.toLocaleString(), row);
+    timeStart.classList.add("timeStart");
+
     ctd(v.end.toLocaleString(), row);
+
     var timeLeft = ctd(formatTime(v.TimeLeft), row);
     timeLeft.classList.add("eventTime");
 
     timeLeft.dataset.datetime = v.start.getTime();
+
     var endtime = v.end.getTime();
     timeLeft.dataset.endtime = endtime;
 
@@ -270,7 +268,9 @@ function showNextEvents(update) {
     }
 
     ctd(sbGetSeason(timeToSBDate(v.startTime, false, true).month), row);
-    ctd(v.SBDate, row);
+    var sbDate = ctd(v.SBDate, row);
+    sbDate.classList.add("sbDate");
+
     tb.appendChild(row);
 
     RELOAD_EVENT_TABLE_TIME = curtime + 60000 - (curtime % 60000); //600000 is 10 Minutes
