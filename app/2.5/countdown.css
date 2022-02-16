@@ -1,16 +1,21 @@
+@font-face {
+  font-family: "Genshin";
+  src: url("D:/github/enlixe.github.io/assets/ja-jp.ttf");
+}
+
 body {
   background-color: lightcyan;
 }
 
 #header {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Genshin", Helvetica, sans-serif;
   font-size: 80px;
   text-align: center;
   color: palevioletred;
 }
 
 #countdown {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Genshin", Helvetica, sans-serif;
   font-size: 80px;
   text-align: center;
   color: pink;
