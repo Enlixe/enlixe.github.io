@@ -296,3 +296,33 @@ function updateTimeLeft() {
     return x;
   });
 }
+
+// Sort Skyblock Date table collumn by date
+function convertDate(d) {
+  var p = d.split("/");
+  return +(p[0] + p[1] + p[2]);
+}
+function sortSBDateTable() {
+  var table, rows, switching, i, x, y, shouldSwitch;
+  table = document.getElementById("table");
+  // switching = true;
+  // while (switching) {
+  // switching = false;
+  rows = table.rows;
+  for (i = 1; i < rows.length - 1; i++) {
+    shouldSwitch = false;
+    x = rows[i].getElementsByClassName("sbDate")[0];
+    y = rows[i + 1].getElementsByClassName("sbDate")[0];
+    if (
+      convertDate(x.innerHTML.toLowerCase()) >
+      convertDate(y.innerHTML.toLowerCase())
+    ) {
+      shouldSwitch = true;
+    }
+    if (shouldSwitch) {
+      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+      //  switching = true;
+    }
+  }
+  // }
+}
