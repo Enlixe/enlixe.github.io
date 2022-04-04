@@ -1,0 +1,43 @@
+@font-face {
+  font-family: "Valorant";
+  src: url("D:/github/enlixe.github.io/assets/fonts/valorant.ttf");
+}
+
+ul > li::before {
+  content: "\B7 / ";
+}
+
+body {
+  background-color: #ece8e1;
+  text-rendering: optimizeLegibility;
+}
+
+#header {
+  font-family: "Valorant", Helvetica, sans-serif;
+  
+  font-size: 6.4rem;
+  display: inline-block;
+  color: #0f1923;
+  line-height: 1.25;
+  font-weight: 700;
+  
+  margin-right: .5rem;
+
+  text-transform: uppercase;
+    margin: 4rem 0 0;
+    /* width: calc(58.33333% - 1.25rem); */
+    box-sizing: border-box;
+}
+
+#countdown {
+  font-family: "Valorant", Helvetica, sans-serif;
+
+  font-size: 4.8rem;
+  line-height: 1.5;
+
+  display: inline-block;
+  color: #768079;
+  font-weight: 700;
+  
+  margin-right: .5rem;
+}

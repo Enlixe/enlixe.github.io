@@ -4,19 +4,21 @@
 }
 
 body {
-  background-color: lightcyan;
+  background-color: rgb(61, 61, 61);
+  font-family: "Genshin", Helvetica, sans-serif;
+  text-align: center;
 }
 
-#header {
-  font-family: "Genshin", Helvetica, sans-serif;
-  font-size: 80px;
-  text-align: center;
-  color: palevioletred;
+h1#header {
+  font-size: 60px;
+  color: white;
+}
+h2#header {
+  font-size: 50px;
+  color: rgb(112, 98, 204);
 }
 
 #countdown {
-  font-family: "Genshin", Helvetica, sans-serif;
   font-size: 80px;
-  text-align: center;
-  color: pink;
+  color: rgb(78, 141, 212);
 }
