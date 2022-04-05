@@ -3,8 +3,13 @@
   src: url("D:/github/enlixe.github.io/assets/fonts/valorant.ttf");
 }
 
+ul {
+  list-style: none;
+}
+
 ul > li::before {
   content: "\B7 / ";
+  color: #0f1923;
 }
 
 body {
