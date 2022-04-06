@@ -16,8 +16,18 @@ var x = setInterval(function () {
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
   // Display the result in the element with id="demo"
-  document.getElementById("countdown").innerHTML =
-    days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+  if (days > 0) {
+    document.getElementById("countdown").innerHTML =
+      days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+  } else if (hours > 0) {
+    document.getElementById("countdown").innerHTML =
+      hours + "h " + minutes + "m " + seconds + "s ";
+  } else if (minutes > 0) {
+    document.getElementById("countdown").innerHTML =
+      minutes + "m " + seconds + "s ";
+  } else {
+    document.getElementById("countdown").innerHTML = seconds + "s ";
+  }
 
   // If the count down is finished, write some text
   if (distance < 0) {
