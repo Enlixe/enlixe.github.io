@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Exo:400,700');
+
+* {
+    font-family: 'Exo', sans-serif;
+}
+
+.exo {
+    font-family: 'Exo', sans-serif !important
+}
+
+.white {
+    color: #f6f6f6
+}
